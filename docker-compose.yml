@@ -24,3 +24,9 @@ services:
         image: "ghcr.io/thecaliskan/symfony-benchmark:frankenphp"
         ports:
             - "9804:9804"
+    adapterman:
+        container_name: "adapterman"
+        build:
+          dockerfile: "./adapterman.Dockerfile"
+        ports:
+            - "9805:9805"
